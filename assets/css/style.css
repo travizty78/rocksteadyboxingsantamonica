@@ -630,3 +630,9 @@ blockquote.prose-quote {
 
 .text-center { text-align: center; }
 .stack { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+
+/* This location's flyer is a taller poster than the Woodland Hills crop, so
+   the shared 500px height cap would render it far narrower. Raise the cap
+   here to keep the rendered width — and so the schedule, address and phone
+   number stay legible — consistent with the other locations. */
+.hero-figure img { max-height: 700px; }
